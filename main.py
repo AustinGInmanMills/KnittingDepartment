@@ -104,7 +104,7 @@ st.header("Knitting Department", divider=("red"))
 
 option = st.selectbox(
     "",
-    ("Doff Time Calculator", "Machine's that are King's", "Machine's that are Queen's", "Machine's that are Black&White Cone", "Machine's that are Pink&Black Cone", "Machine's that are Horse Head Cone", "Chat"),
+    ("Doff Time Calculator", "Machine's that are King's", "Machine's that are Queen's", "Machine's that are Black&White Cone", "Machine's that are Pink&Black Cone", "Machine's that are Horse Head Cone"),
     index=None,
     placeholder="Select an option...",
 )
