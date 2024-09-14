@@ -104,7 +104,7 @@ st.header("Knitting Department", divider=("red"))
 
 option = st.selectbox(
     "",
-    ("Doff Time Calculator", "Machine's that are King's", "Machine's that are Queen's", "Machine's that are Black&White Cone", "Machine's that are Pink&Black Cone", "Machine's that are Horse Head Cone"),
+    ("Doff Time Calculator", "Machine's that are King's", "Machine's that are Queen's", "Machine's that are Black&White Cone", "Machine's that are Pink&Black Cone", "Machine's that are Horse Head Cone", "Chat"),
     index=None,
     placeholder="Select an option...",
 )
@@ -802,3 +802,7 @@ elif option == "Machine's that are Horse Head Cone":
     st.write("DOFF = ", int(machine_13))
     st.write("RPMS = ", int(machine_13_rpms))
     st.divider()
+elif option == "Chat":
+    prompt = st.chat_input("Say something")
+    if prompt:
+        st.write(f"User has sent the following prompt: {prompt}")
