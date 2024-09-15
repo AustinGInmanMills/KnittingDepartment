@@ -19,6 +19,7 @@ total_inoperable = 6
 
 total_kings = 0
 total_queens = 0
+total_twins = 3
 
 total_white = 8
 total_pink = 5
@@ -1072,7 +1073,29 @@ with tab2:
 
 
         elif options == "Twin Fabric Machines":
-            st.header("Currently Not Added...")
+            st.caption(f"Total Twin Machines = :orange[{total_twins}]")
+
+            st.subheader(f"Machine #11 | {machine_11_status}")
+            st.markdown(f"Size = :orange[{machine_11_size}]")
+            st.markdown(f"Yarn Type = :orange[{machine_11_yarn_type}]")
+            st.markdown(f"DOFF = :orange[{machine_11}]")
+            st.markdown(f"RPMS = :orange[{machine_11_rpms}]")
+            st.divider()
+
+
+            st.subheader(f"Machine #12 | {machine_12_status}")
+            st.markdown(f"Size = :orange[{machine_12_size}]")
+            st.markdown(f"Yarn Type = :orange[{machine_12_yarn_type}]")
+            st.markdown(f"DOFF = :orange[{machine_12}]")
+            st.markdown(f"RPMS = :orange[{machine_12_rpms}]")
+            st.divider()
+
+
+            st.subheader(f"Machine #13 | {machine_13_status}")
+            st.markdown(f"Size = :orange[{machine_13_size}]")
+            st.markdown(f"Yarn Type = :orange[{machine_13_yarn_type}]")
+            st.markdown(f"DOFF = :orange[{machine_13}]")
+            st.markdown(f"RPMS = :orange[{machine_13_rpms}]")
 
 
     elif options == "Machines Yarn Type":
