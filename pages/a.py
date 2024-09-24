@@ -1,6 +1,8 @@
 import streamlit as st
 st.write(st.query_params)
-if not st.session_state.name:
+if "name" not in st.session_state:
     st.write("Name not found")
 else:
     st.write(f"{st.session_state.name} found")
+
+
