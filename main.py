@@ -13,5 +13,4 @@ with st.form("help"):
 
 if st.button("click me"):
     st.write("yep")
-    if st.rerun()==True:
-        st.write("app reruned")
+    
