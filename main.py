@@ -5,7 +5,7 @@ placeholder = st.empty()
 
 
 def page1():
-    with placeholder.container():
+    with placeholder.container("Hey"):
         hey = st.button("1")
         if hey:
             st.write("Hello")
