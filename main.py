@@ -5,13 +5,7 @@ placeholder1 = st.empty()
 placeholder2 = st.empty()
 
 
-def page1():
-    with st.container():
-        hey = st.button("1")
-        if hey:
-            st.write("Hello")
-            
-            page2()
+
     
 def page2():
     with st.container():
@@ -24,4 +18,9 @@ def page2():
             
             
             
-page1()
+with st.container():
+        hey = st.button("1")
+        if hey:
+            st.write("Hello")
+            
+            page2()
