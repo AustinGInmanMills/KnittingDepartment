@@ -5,6 +5,9 @@ def page1():
     with placeholder.form("Bye"):
         if st.form_submit_button:
             st.write("Bye")
+            time.sleep(3)
+            placeholder.empty()
+            page2()
     
 def page2():
     placeholder = st.empty()
@@ -13,4 +16,4 @@ def page2():
             st.write("Hello")
             
             
-st.page(page2())
+page1()
