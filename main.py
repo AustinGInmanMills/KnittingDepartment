@@ -11,6 +11,7 @@ def page1():
             st.session_state.run = True
             time.sleep(2)
             placeholder.empty()
+            time.sleep(3)
             page2()
         
 def page2():
