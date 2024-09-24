@@ -10,8 +10,8 @@ placeholder2 = st.empty()
 
 with st.form("help"):
     st.write("help")
-   with st.form_submit_button("click"):
-      st.write("agaha")
+    with st.form_submit_button("click"):
+       st.write("agaha")
 
 if st.button("click me"):
     st.write("yep")
