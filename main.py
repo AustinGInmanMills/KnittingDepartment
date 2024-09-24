@@ -7,21 +7,7 @@ placeholder2 = st.empty()
 
 
     
-def page2():
-    with st.container():
-        bye = st.button("2")
-        if bye:
-            st.write("Bye")
-            time.sleep(3)
-            
-
-            
-            
-            
-            
-with st.container():
-        hey = st.button("1")
-        if hey:
-            st.write("Hello")
-            
-            page2()
+def welcome():
+    st.write("hey")
+    
+welcome()
