@@ -2,6 +2,7 @@ import streamlit as st
 import time
 
 placeholder = st.empty()
+placeholder2 = st.empty()
 
 def page1():
     with placeholder.form("Bye"):
@@ -14,7 +15,7 @@ def page1():
             page2()
     
 def page2():
-    with placeholder.form("Hello"):
+    with placeholder2.form("Hello"):
         submit = st.form_submit_button()
         if submit:
             st.write("Hello")
