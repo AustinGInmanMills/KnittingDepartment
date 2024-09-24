@@ -17,7 +17,7 @@ def page1():
 def page2():
     with placeholder.container():
         bye = st.button("2")
-        if hey:
+        if bye:
             st.write("Bye")
             
 
