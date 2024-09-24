@@ -14,6 +14,12 @@ def page1():
             time.sleep(2)
             page2()
     
+def page2():
+    with placeholder.container():
+        hey = st.button("2")
+        if hey:
+            st.write("Hello")
+            
 
             
             
