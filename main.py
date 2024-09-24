@@ -12,6 +12,7 @@ def page2():
         bye = st.button("2")
         if bye:
             st.write("Bye")
+            time.sleep(3)
             
 
             
