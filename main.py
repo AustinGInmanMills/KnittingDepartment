@@ -20,5 +20,5 @@ def page2():
         if submit: 
             st.write("bye")
 
-
+page1()
 
