@@ -1,7 +1,7 @@
 import streamlit as st
 
-if 'button_clicked' not in st.session_state:
-    st.session_state.button_clicked = False
+#if 'button_clicked' not in st.session_state:
+    #st.session_state.button_clicked = False
 
 def handle_click():
     st.session_state.button_clicked = True
