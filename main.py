@@ -6,7 +6,7 @@ import streamlit as st
 def handle_click():
     st.session_state.button_clicked = True
 
-if st.button("Click me", on_click=handle_click):
+if st.button("Click me"):
     if not st.session_state.button_clicked:
         # Code to run only once on button click
         st.write("Button clicked for the first time!")
