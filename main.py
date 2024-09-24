@@ -4,7 +4,7 @@ import time
 def page1():
     placeholder = st.empty()
     with placeholder.form("Bye"):
-    submit = st.form_submit_button
+    submit = st.form_submit_button()
         if submit:
             st.write("Bye")
             time.sleep(3)
@@ -14,7 +14,7 @@ def page1():
 def page2():
     placeholder = st.empty()
     with placeholder.form("Bye"):
-    submit = st.form_submit_button
+    submit = st.form_submit_button()
         if submit:
             st.write("Hello")
             
