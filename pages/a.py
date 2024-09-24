@@ -1,5 +1,7 @@
 import streamlit as st
 import time
 
-if "names" in st.query_params:
+if "names" not in st.query_params:
+    st.rerun()
+else:
     st.write(st.query_params.names)
