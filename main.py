@@ -28,7 +28,5 @@ def page2():
             page1()
             
             
-if not "form1" in st.session_state:
-    page1()
-elif st.session_state.form1 == True:
-    page2()
+st.button("1", on_click=page1) 
+st.button("2", on_click=page2)
