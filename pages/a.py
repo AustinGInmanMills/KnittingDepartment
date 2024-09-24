@@ -7,3 +7,5 @@ if "names" not in st.query_params:
     st.rerun()
 else:
     st.write(st.query_params.names)
+    
+st.rerun()
