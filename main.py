@@ -4,4 +4,6 @@ def page2():
     st.title("Second page")
 
 
-st.Page(page2)
+yeah = st.Page(page2)
+
+yeah.run()
