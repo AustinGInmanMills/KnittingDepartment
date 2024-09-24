@@ -28,7 +28,7 @@ def page2():
             page1()
             
             
-if st.session_state.form1 == False:
+if not "form1" in st.session_state:
     page1()
 elif st.session_state.form1 == True:
     page2()
