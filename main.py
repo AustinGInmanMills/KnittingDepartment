@@ -31,5 +31,5 @@ def page2():
 def test():
     st.write("hello")
             
-st.button("1", on_click=page1) 
+st.button("1", on_click=test) 
 st.button("2", on_click=page2)
