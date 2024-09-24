@@ -9,9 +9,8 @@ def page1():
         if submit: 
             st.write("hey")
             st.session_state.form1 = False
-            time.sleep(2)
+            time.sleep(1)
             placeholder.empty()
-            time.sleep(0)
             page2()
         
 def page2():
