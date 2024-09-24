@@ -8,6 +8,8 @@ def page1():
         if submit: 
             st.write("hey")
             st.session_state.run = True
+            placeholder.empty()
+            page2()
         
 def page2():
     with placeholder.form("Bye"):
