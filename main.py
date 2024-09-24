@@ -34,7 +34,7 @@ if st.session_state.form1 == False:
 else: 
     pass
     
-if st.session_state.form2 == False:
+if st.session_state.form1 == True:
     page2()
 else: 
     pass
