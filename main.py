@@ -20,8 +20,5 @@ def page2():
         if submit: 
             st.write("bye")
 
-if not "form1" in st.session_state:
-    page1()
-else:
-    page2()
+page1()
 
