@@ -12,9 +12,9 @@ def page1():
     
 def page2():
     placeholder = st.empty()
+    with placeholder.form("Bye"):
     submit = st.form_submit_button
-    with submit:
-        if st.form_submit_button:
+        if submit:
             st.write("Hello")
             
             
