@@ -1,12 +1,24 @@
 import streamlit as st
 
-#if 'button_clicked' not in st.session_state:
-    #st.session_state.button_clicked = False
+placeholder = st.empty()
 
-def handle_click():
-    st.session_state.button_clicked = True
+def page1():
+    with placeholder.form("Hey"):
+    submit = st.form_submit_button("click1")
+    if submit: 
+        st.write("hey")
+        st.session_state.run = True
+        
+def page2():
+    with placeholder.form("Bye"):
+    submit = st.form_submit_button("click1")
+    if submit: 
+        st.write("hey")
+        st.session_state.run = True
 
-if st.button("Click me"):
-    if not "button_clicked" in st.session_state:
-        # Code to run only once on button click
-        st.write("Button clicked for the first time!")
+if not "run" in st.session_state:
+    page1()
+else:
+    page2()
+    
+
