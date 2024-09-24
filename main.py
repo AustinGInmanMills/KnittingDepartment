@@ -19,7 +19,7 @@ def page2():
         if submit: 
             st.write("bye")
 
-if not st.session_state.form1:
+if not "form1" in st.session_state:
     page1()
 else:
     page2()
