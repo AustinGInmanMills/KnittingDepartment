@@ -10,6 +10,7 @@ def page1():
             st.write("hey")
             st.session_state.run = True
             placeholder.empty()
+            time.sleep(2)
             page2()
         
 def page2():
