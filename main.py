@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 def page1():
     placeholder = st.empty()
