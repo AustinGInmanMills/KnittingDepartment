@@ -1,18 +1,12 @@
 import streamlit as st
-import time
 
-placeholder1 = st.empty()
-placeholder2 = st.empty()
+if 'button_clicked' not in st.session_state:
+    st.session_state.button_clicked = False
 
+def handle_click():
+    st.session_state.button_clicked = True
 
-
-    
-
-with st.form("help"):
-    st.write("help")
-    with st.form_submit_button("click"):
-       st.write("agaha")
-
-if st.button("click me"):
-    st.write("yep")
-    
+if st.button("Click me", on_click=handle_click):
+    if not st.session_state.button_clicked:
+        # Code to run only once on button click
+        st.write("Button clicked for the first time!")
