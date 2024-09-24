@@ -4,4 +4,4 @@ def page2():
     st.title("Second page")
 
 
-page2.run()
+st.Page(page2)
