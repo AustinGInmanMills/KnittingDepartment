@@ -1,6 +1,9 @@
 import streamlit as st
 import time
 
+st.session_state.form1 = False
+st.session_state.form2 = False
+
 placeholder = st.empty()
 
 def page1():
@@ -24,6 +27,7 @@ def page2():
             placeholder.empty()
             time.sleep(1)
             page1()
+            
             
 if st.session_state.form1 == False:
     page1()
