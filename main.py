@@ -9,9 +9,7 @@ def page1():
         hey = st.button("1")
         if hey:
             st.write("Hello")
-            time.sleep(3)
-            placeholder.empty()
-            time.sleep(2)
+            
             page2()
     
 def page2():
