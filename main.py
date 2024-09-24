@@ -14,7 +14,7 @@ def page1():
             page2()
     
 def page2():
-    with placeholder.form("Bye"):
+    with placeholder.form("Hello"):
         submit = st.form_submit_button()
         if submit:
             st.write("Hello")
