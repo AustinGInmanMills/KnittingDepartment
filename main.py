@@ -8,7 +8,7 @@ def page1():
         submit = st.form_submit_button("click1")
         if submit: 
             st.write("hey")
-            st.session_state.form1 = False
+            st.session_state.form1 = True
             time.sleep(1)
             placeholder.empty()
             time.sleep(1)
@@ -19,12 +19,18 @@ def page2():
         submit = st.form_submit_button("click2")
         if submit: 
             st.write("bye")
+            st.session_state.form2 = True
             time.sleep(1)
             placeholder.empty()
             time.sleep(1)
             page1()
-if not "form1" in st.session_state:
+            
+if st.session_state.form1 == False:
     page1()
-else:
+else: 
+    pass
+    
+if st.session_state.form2 == False:
     page2()
-
+else: 
+    pass
