@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.write("QueryParams: ", st.query_params)
+st.write(st.query_params.name)
