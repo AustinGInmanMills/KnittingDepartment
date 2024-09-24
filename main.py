@@ -1,8 +1,7 @@
 import streamlit as st
 import time
 
-st.session_state.form1 = False
-st.session_state.form2 = False
+st.session_state.form1
 
 placeholder = st.empty()
 
