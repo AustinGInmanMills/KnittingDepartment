@@ -6,7 +6,7 @@ placeholder = st.empty()
 
 def page1():
     with placeholder.container():
-        hey = st.button()
+        hey = st.button("1")
         if hey:
             st.write("Hello")
             time.sleep(3)
