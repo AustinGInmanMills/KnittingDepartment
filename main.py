@@ -13,4 +13,4 @@ def page2():
             st.write("Hello")
             
             
-st.page(page2)
+st.page(page2())
