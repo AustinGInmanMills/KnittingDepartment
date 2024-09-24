@@ -5,20 +5,22 @@ placeholder = st.empty()
 
 
 def page1():
-    with placeholder.container("Bye"):
-        submit = st.button()
-        if submit:
-            st.write("Bye")
+    with placeholder.container():
+        hey = st.button()
+        if hey:
+            st.write("Hello")
             time.sleep(3)
             placeholder.empty()
-            time.sleep(1)
+            time.sleep(2)
             page2()
     
 def page2():
-    with placeholder2.container("Hello"):
-        submit2 = st.button()
-        if submit2:
-            st.write("Hello")
+    with placeholder.container():
+        hey = st.button()
+        if hey:
+            st.write("Bye")
+            
+            
             
             
 page1()
