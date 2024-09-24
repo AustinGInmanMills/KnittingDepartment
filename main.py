@@ -7,7 +7,9 @@ placeholder2 = st.empty()
 
 
     
-st.checkbox("test")
+
+with st.form("help"):
+    st.write("help")
 
 if st.button("click me"):
     st.write("yep")
