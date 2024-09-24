@@ -11,5 +11,5 @@ st.checkbox("test")
 
 if st.button("click me"):
     st.write("yep")
-    if st.rerun():
+    if st.rerun()==True:
         st.write("app reruned")
