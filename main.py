@@ -31,5 +31,5 @@ def page2():
             
 if st.session_state.form1 == False:
     page1()
-else: 
+elif st.session_state.form1 == True:
     page2()
