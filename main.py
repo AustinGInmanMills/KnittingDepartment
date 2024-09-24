@@ -7,6 +7,6 @@ def handle_click():
     st.session_state.button_clicked = True
 
 if st.button("Click me"):
-    if not st.session_state.button_clicked:
+    if not "button_clicked" in st.session_state:
         # Code to run only once on button click
         st.write("Button clicked for the first time!")
