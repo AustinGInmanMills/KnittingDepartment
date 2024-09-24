@@ -20,9 +20,5 @@ def page2():
         if submit: 
             st.write("bye")
 
-if not "run" in st.session_state:
-    page1()
-else:
-    page2()
-    
+
 
