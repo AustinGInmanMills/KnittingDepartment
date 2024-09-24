@@ -7,7 +7,6 @@ placeholder2 = st.empty()
 
 
     
-def welcome():
-    st.write("hey")
-    
-welcome()
+st.checkbox("test")
+
+st.button("click me")
